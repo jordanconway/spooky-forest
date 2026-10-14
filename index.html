@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sounds of the Forest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <div class="intro-container">
+            <h1>What's that sound in the forest?</h1>
+            <p class="intro-text">It's a dark night in the forests of Quebec...</p>
+            <div class="button-wrapper">
+                <button id="listenButton">Listen... if you dare.</button>
+                <button id="revealButton" class="hidden">Show me who it is</button>
+            </div>
+            <button id="showAllButton" class="link-button">Show me all the animals</button>
+        </div>
+
+        <div id="reveal" class="hidden">
+            <h2 id="animalName"></h2>
+            <img id="animalImage" src="" alt="">
+            <p id="animalDescription"></p>
+            <button id="restartButton">Hear another sound</button>
+        </div>
+    </main>
+
+    <div id="summaryContainer" class="hidden">
+        <h2>Meet the Animals</h2>
+        <p>Click on an animal to hear its sound.</p>
+        <div id="animalGrid"></div>
+        <button id="backButton">Back to the Forest</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
